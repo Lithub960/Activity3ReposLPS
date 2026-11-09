@@ -3,5 +3,5 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
-RUN ["/bin/bash", "-c", "echo "$FREQ_RESULT""]
+RUN["/bin/bash", "-c", "echo "$FREQ_RESULT""]
 ENTRYPOINT ["entrypoint.sh"]
