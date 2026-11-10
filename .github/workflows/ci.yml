@@ -37,3 +37,7 @@ jobs:
     - name: Push Docker Image
       run: |
         docker push D0c4G1thub730/my-app:latest
+
+    - name: Deploy Docker
+      run: |
+        docker compose up -d D0c4G1thub730/my-app:latest
