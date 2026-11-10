@@ -4,4 +4,4 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
 RUN ["/bin/bash", "-c", "echo \"$FREQ_RESULT\""]
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["/app/.github/scripts/entrypoint.sh"]
